@@ -15,7 +15,7 @@ router.route("/:tool").get((req, res) => {
     console.log("https://schneeberger-backend-qe9c481m3.vercel.app/assets/pdf/" + foundPdfs)
 
     //   res.send("http://192.168.178.54:5000/assets/pdf/"+foundPdfs)
-    res.send("https://schneeberger-backend-qe9c481m3.vercel.app/assets/pdf/" + foundPdfs)
+    res.send({ pdf: "https://schneeberger-backend-qe9c481m3.vercel.app/assets/pdf/" + foundPdfs })
 
     //http://assets.edlixstudios.de/pdf
 })
